@@ -1,13 +1,15 @@
-import { GridItem } from '@chakra-ui/react'
+import { Grid, GridItem } from '@chakra-ui/react'
 
 export default function Menu() {
   return (
     <GridItem
         area={'menu'}
-        p="2"
-        bg={'red.900'}
+        p={2}
+        bg={'blue.900'}
     >
-        Menu
+        <Grid>
+            
+        </Grid>
     </GridItem>
   )
 }
