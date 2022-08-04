@@ -14,7 +14,7 @@ export default function Home() {
             `
             }
             gridTemplateColumns={'1fr 4fr'}
-            gridTemplateRows={'8vh 84vh 8vh'}
+            gridTemplateRows={'8vh auto 8vh'}
         >
             <Header />
             <Menu />
