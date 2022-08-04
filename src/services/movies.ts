@@ -1,9 +1,11 @@
-export {}
+import api from './api'
 
-async function getAllMovies() {
+export async function getPopularMovies() {
     try {
-        const movies = await 
+        const { data } = await api.get(`/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=pt-BR`);
+
+        return data;
     } catch (error) {
-        
+        console.log(error)
     }
 }
